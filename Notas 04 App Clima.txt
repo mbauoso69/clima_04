@@ -1,0 +1,50 @@
+Temas puntuales de la sección
+Sección 6, Clase 52
+Temas de la sección:
+La sección se enfoca en los siguientes temas:
+
+- Consumo de APIs
+- Llamadas HTTP hacia servidores externos
+- Paquete request
+- Paquete Axios
+- Uso de Google services para obtener lugares
+- Uso de OpenWeather para obtener el clima
+- Respaldos locales y remotos mediante
+
+
+1. Ir a la dirección de Google Maps
+
+    https://developers.google.com/maps/documentation/geocoding/start
+
+2. En esta dirección 
+
+    https://developers.google.com/maps/documentation/geocoding/start
+
+copiamos la siguiente instrucción, que es un ejemplo de como llamar un API web de Google Maps.
+
+https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
+
+Que nos da datos de geolocalización de acuerdo a la dirección o ciudad que le pasamos como parámetro.
+
+Lo que hay que notar es que el último elemento de la línea solicita una llave, misma que viene abajo:
+
+    AIzaSyDyJPPlnIMOLp20Ef1LlTong8rYdTnaTXM
+
+Como ejemplo de lo anterior para que nos dé los datos de la CDMX sería:
+
+https://maps.googleapis.com/maps/api/geocode/json?address=Ciudad de Mexico Mexico&key=AIzaSyDyJPPlnIMOLp20Ef1LlTong8rYdTnaTXM
+
+
+3. Para insertar el llamado de esta URL dentro de nuestro código es posible usando un par de librerías o paquetes,
+uno de ellos es request y la otra axios. Es decir, nos permite hacer peticiones GET, PUT, POST etcétera a cualquier
+servicio.
+ La diferencia entre ambos paquetes es que axios se basa en "promesas". Para este proyecto se usará axios, entonces
+ se instala de la siguiene manera:
+
+      npm install axios --save
+
+
+
+
+
+
